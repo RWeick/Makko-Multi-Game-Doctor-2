@@ -1,7 +1,7 @@
 (kicad_pcb
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(general
 		(thickness 1.6)
 		(legacy_teardrops no)
@@ -9,34 +9,34 @@
 	(paper "A3")
 	(layers
 		(0 "F.Cu" signal)
-		(31 "B.Cu" signal)
-		(32 "B.Adhes" user "B.Adhesive")
-		(33 "F.Adhes" user "F.Adhesive")
-		(34 "B.Paste" user)
-		(35 "F.Paste" user)
-		(36 "B.SilkS" user "B.Silkscreen")
-		(37 "F.SilkS" user "F.Silkscreen")
-		(38 "B.Mask" user)
-		(39 "F.Mask" user)
-		(40 "Dwgs.User" user "User.Drawings")
-		(41 "Cmts.User" user "User.Comments")
-		(42 "Eco1.User" user "User.Eco1")
-		(43 "Eco2.User" user "User.Eco2")
-		(44 "Edge.Cuts" user)
-		(45 "Margin" user)
-		(46 "B.CrtYd" user "B.Courtyard")
-		(47 "F.CrtYd" user "F.Courtyard")
-		(48 "B.Fab" user)
-		(49 "F.Fab" user)
-		(50 "User.1" user)
-		(51 "User.2" user)
-		(52 "User.3" user)
-		(53 "User.4" user)
-		(54 "User.5" user)
-		(55 "User.6" user)
-		(56 "User.7" user)
-		(57 "User.8" user)
-		(58 "User.9" user)
+		(2 "B.Cu" signal)
+		(9 "F.Adhes" user "F.Adhesive")
+		(11 "B.Adhes" user "B.Adhesive")
+		(13 "F.Paste" user)
+		(15 "B.Paste" user)
+		(5 "F.SilkS" user "F.Silkscreen")
+		(7 "B.SilkS" user "B.Silkscreen")
+		(1 "F.Mask" user)
+		(3 "B.Mask" user)
+		(17 "Dwgs.User" user "User.Drawings")
+		(19 "Cmts.User" user "User.Comments")
+		(21 "Eco1.User" user "User.Eco1")
+		(23 "Eco2.User" user "User.Eco2")
+		(25 "Edge.Cuts" user)
+		(27 "Margin" user)
+		(31 "F.CrtYd" user "F.Courtyard")
+		(29 "B.CrtYd" user "B.Courtyard")
+		(35 "F.Fab" user)
+		(33 "B.Fab" user)
+		(39 "User.1" user)
+		(41 "User.2" user)
+		(43 "User.3" user)
+		(45 "User.4" user)
+		(47 "User.5" user)
+		(49 "User.6" user)
+		(51 "User.7" user)
+		(53 "User.8" user)
+		(55 "User.9" user)
 	)
 	(setup
 		(stackup
@@ -80,9 +80,10 @@
 		)
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
+		(tenting front back)
 		(pcbplotparams
-			(layerselection 0x00010fc_ffffffff)
-			(plot_on_all_layers_selection 0x0000000_00000000)
+			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions no)
 			(usegerberattributes yes)
@@ -92,7 +93,6 @@
 			(dashed_line_gap_ratio 3.000000)
 			(svgprecision 4)
 			(plotframeref no)
-			(viasonmask no)
 			(mode 1)
 			(useauxorigin no)
 			(hpglpennumber 1)
@@ -100,16 +100,20 @@
 			(hpglpendiameter 15.000000)
 			(pdf_front_fp_property_popups yes)
 			(pdf_back_fp_property_popups yes)
+			(pdf_metadata yes)
+			(pdf_single_document no)
 			(dxfpolygonmode yes)
 			(dxfimperialunits yes)
 			(dxfusepcbnewfont yes)
 			(psnegative no)
 			(psa4output no)
-			(plotreference yes)
-			(plotvalue yes)
-			(plotfptext yes)
+			(plot_black_and_white yes)
 			(plotinvisibletext no)
 			(sketchpadsonfab no)
+			(plotpadnumbers no)
+			(hidednponfab no)
+			(sketchdnponfab yes)
+			(crossoutdnponfab yes)
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
@@ -157,9 +161,9 @@
 	(net 36 "/A20")
 	(net 37 "/Bank.D7")
 	(net 38 "/A21")
-	(net 39 "/CON1.Pin42")
+	(net 39 "/~{Read}.U4")
 	(net 40 "/GG.GB.~{Read}")
-	(net 41 "/~{Read}")
+	(net 41 "/~{Read}.U8")
 	(net 42 "unconnected-(U4-I{slash}O-Pad12)")
 	(net 43 "/~{M0-7}")
 	(net 44 "/A0")
@@ -169,13 +173,13 @@
 	(net 48 "/~{GG}")
 	(net 49 "/Proc.CLK.Out.2")
 	(net 50 "/~{Reset}")
-	(net 51 "/CON1.Pin45")
+	(net 51 "/Batt.Detect")
 	(net 52 "Net-(CON2-Pin_3)")
 	(net 53 "Net-(CON2-Pin_2)")
 	(net 54 "Net-(CON2-Pin_4)")
-	(net 55 "/CON1.Pin39")
-	(net 56 "/CON1.Pin40")
-	(net 57 "/CON1.Pin38")
+	(net 55 "/~{Read}.U7")
+	(net 56 "/~{Read}.U6")
+	(net 57 "/~{Read}.U5")
 	(net 58 "/A10")
 	(net 59 "unconnected-(J3-{slash}PAWR-Pad35)")
 	(net 60 "/A4")
@@ -293,21 +297,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-20_W7.62mm_Socket"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9830e0ef-6f1e-4e75-8008-f62629acaad8")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS245"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -320,7 +311,7 @@
 			)
 		)
 		(property "Description" "Octal BUS Transceivers, 3-State outputs"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -334,7 +325,7 @@
 		)
 		(property ki_fp_filters "DIP?20*")
 		(path "/e6b67eee-d583-454b-9043-8f32cebe0428")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "MD02U-1.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -799,6 +790,7 @@
 			(pintype "power_in")
 			(uuid "cb6c4bf8-0b75-44b1-adbe-76c2f6223a3b")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Package_DIP.3dshapes/DIP-20_W7.62mm_Socket.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -840,19 +832,6 @@
 				)
 			)
 		)
-		(property "Footprint" "!MD02U-1:THT Resistor"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f20c2b7f-6338-4b37-a2ab-137f90024c50")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
@@ -881,7 +860,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/c21c3bda-2f6c-4839-98ad-ef20aa994064")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "MD02U-1.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -995,6 +974,7 @@
 			(pintype "passive")
 			(uuid "5464faee-9f5a-409e-b504-aa80a52bf053")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1036,19 +1016,6 @@
 				)
 			)
 		)
-		(property "Footprint" "!MD02U-1:GG Cartridge Slot"
-			(at 0.04 -13.1 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "319c8457-1505-4d62-8745-ddbdcff91143")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0.04 -13.1 0)
 			(unlocked yes)
@@ -1076,7 +1043,7 @@
 			)
 		)
 		(path "/2d65c4fa-d9d1-4111-a00d-a3d2a4dc929a")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "MD02U-1.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -1156,7 +1123,7 @@
 				(width 0.05)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "Edge.Cuts")
 			(uuid "efc01ad4-1d2d-4f45-8cc9-b3ad621a2ebb")
 		)
@@ -1167,7 +1134,7 @@
 				(width 0.05)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "Edge.Cuts")
 			(uuid "3535ea83-e368-47c4-80f8-098ad4935f1f")
 		)
@@ -1442,7 +1409,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 41 "/~{Read}")
+			(net 41 "/~{Read}.U8")
 			(pinfunction "~{CE}")
 			(pintype "input")
 			(uuid "15ab6d83-bc64-42e9-b55c-9cf271441ac9")
@@ -1678,6 +1645,7 @@
 			(pintype "input+no_connect")
 			(uuid "c2a04f40-e3d8-4e02-ade9-7ba81d20bc04")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Package_DIP:DIP-20_W7.62mm_Socket"
 		(layer "F.Cu")
@@ -1697,7 +1665,7 @@
 				)
 			)
 		)
-		(property "Value" "PEEL"
+		(property "Value" "~"
 			(at 3.81 11.43 180)
 			(layer "F.SilkS")
 			(uuid "eac4d3ce-e90e-4d44-91e0-9270d42ecc6e")
@@ -1708,21 +1676,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-20_W7.62mm_Socket"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f3514ecc-db01-485b-8aca-197825941e94")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1735,7 +1690,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -1748,7 +1703,7 @@
 			)
 		)
 		(path "/0431e86a-22f5-4666-a333-ae7fae3e0e76")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "MD02U-1.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -2021,7 +1976,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 41 "/~{Read}")
+			(net 41 "/~{Read}.U8")
 			(pinfunction "Input")
 			(pintype "input")
 			(uuid "333262d3-0377-41df-8a42-b4b0e5c8d940")
@@ -2032,7 +1987,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 39 "/CON1.Pin42")
+			(net 39 "/~{Read}.U4")
 			(pinfunction "Input")
 			(pintype "input")
 			(uuid "084aab68-46de-45ef-b375-6d3b1087d854")
@@ -2213,6 +2168,7 @@
 			(pintype "power_in")
 			(uuid "2248522e-a1d0-458a-9af3-5cc65a560c86")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Package_DIP.3dshapes/DIP-20_W7.62mm_Socket.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2253,19 +2209,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP9"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "70b2e0dc-0464-4ba4-8610-2906ad4c637e")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
 			(at 0 0 180)
 			(unlocked yes)
@@ -2294,7 +2237,7 @@
 		)
 		(property ki_fp_filters "R?Array?SIP*")
 		(path "/004e0960-9bf0-4c1e-9f43-71effcc69f4b")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "MD02U-1.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -2547,6 +2490,7 @@
 			(pintype "passive")
 			(uuid "24864597-075e-4069-9fe9-ce760a1d4b05")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Array_SIP9.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2583,19 +2527,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_A-405_P7.62mm_Horizontal"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6c86cb15-0b79-4175-ad7b-3545a1bf828c")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -2654,7 +2585,7 @@
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/a229d926-5159-43bc-8c82-eadec0dc8a5e")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "MD02U-1.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -2932,6 +2863,7 @@
 			(pintype "passive")
 			(uuid "033d10cf-07e5-49f3-a2e3-150195553977")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Diode_THT.3dshapes/D_A-405_P7.62mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2973,21 +2905,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-20_W7.62mm_Socket"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8062aa4c-e908-4fc5-bc9d-00ae8c54e210")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS245"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3000,7 +2919,7 @@
 			)
 		)
 		(property "Description" "Octal BUS Transceivers, 3-State outputs"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3014,7 +2933,7 @@
 		)
 		(property ki_fp_filters "DIP?20*")
 		(path "/18deefc9-0b44-42fc-8016-6aacb3f389c0")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "MD02U-1.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -3479,6 +3398,7 @@
 			(pintype "power_in")
 			(uuid "57b39b7c-f7c0-46c2-bbc4-46cdcfa1f2bd")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Package_DIP.3dshapes/DIP-20_W7.62mm_Socket.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3520,19 +3440,6 @@
 				)
 			)
 		)
-		(property "Footprint" "!MD02U-1:THT Resistor"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "56e21daf-73c8-4acf-953a-1624e5ef41ed")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -3561,7 +3468,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/039af297-55cc-4bf8-ab77-9658cacf2164")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "MD02U-1.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -3675,6 +3582,7 @@
 			(pintype "passive")
 			(uuid "0bda2a2a-ff71-4bfb-aefc-fc07de0ba7d8")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3715,19 +3623,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "18462aa8-8cc5-4209-a6fd-967cb1771798")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
@@ -3756,7 +3651,7 @@
 		)
 		(property ki_fp_filters "CP_*")
 		(path "/b0b1e3a6-825a-4a3e-9303-748473c20652")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "MD02U-1.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -4966,7 +4861,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "cbe976c8-64c8-4868-8357-3a5fdd18fc67")
 		)
@@ -4977,7 +4872,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "a869f89f-c2ee-451a-97ec-58d84d566a2a")
 		)
@@ -5008,7 +4903,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "5aadb127-7c05-49ec-93e6-8f90d12045aa")
 		)
@@ -5043,6 +4938,7 @@
 			(pintype "passive")
 			(uuid "9de8ee6d-9cc0-454e-a3ca-64d6e2d21e50")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_THT.3dshapes/CP_Radial_D5.0mm_P2.50mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -5083,19 +4979,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP9"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "fe164efd-fbb3-45fa-ac77-597690146444")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" "http://www.vishay.com/docs/31509/csc.pdf"
 			(at 0 0 180)
 			(unlocked yes)
@@ -5124,7 +5007,7 @@
 		)
 		(property ki_fp_filters "R?Array?SIP*")
 		(path "/1146b918-659f-4c1a-9b79-54b4af4f34bc")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "MD02U-1.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -5377,6 +5260,7 @@
 			(pintype "passive")
 			(uuid "3eabc7e4-8e51-4a97-86e6-f928cb60fa41")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Array_SIP9.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -5394,7 +5278,7 @@
 		(uuid "7fabacfa-0493-4523-b812-453876c18d7e")
 		(at 141.21 119.56 -90)
 		(property "Reference" "J5"
-			(at 0.03 6.12 -90)
+			(at 0.03 6.12 270)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
@@ -5418,21 +5302,8 @@
 				)
 			)
 		)
-		(property "Footprint" "!MD02U-1:PCE Edge Connector"
-			(at 0 -9.07 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f71a598f-78cd-4ce2-bd5d-4e8ac658b952")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 -9.07 -90)
+			(at 0 -9.07 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5445,7 +5316,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 -9.07 -90)
+			(at 0 -9.07 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5458,7 +5329,7 @@
 			)
 		)
 		(path "/caf43c13-73c8-4381-81a6-9fdc7181476c")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "MD02U-1.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -5538,7 +5409,7 @@
 				(width 0.05)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "Edge.Cuts")
 			(uuid "4fcee1ef-b811-4519-b6f7-adc762b2fd49")
 		)
@@ -5549,12 +5420,12 @@
 				(width 0.05)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "Edge.Cuts")
 			(uuid "8d908872-4123-4958-82dd-ae55d21ca4dc")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -6.57 -90)
+			(at 0 -6.57 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "9eaa9ec8-bd17-4f27-84a2-eb429dcd09cd")
@@ -5846,7 +5717,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 41 "/~{Read}")
+			(net 41 "/~{Read}.U8")
 			(pinfunction "~{OE}")
 			(pintype "output")
 			(uuid "9408e2a1-964a-4733-b9ef-c6e33b96327d")
@@ -5983,6 +5854,7 @@
 			(pintype "power_out")
 			(uuid "0f4f4b59-9f0b-4355-aaa3-44b9e853cf71")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Package_DIP:DIP-20_W7.62mm_Socket"
 		(layer "F.Cu")
@@ -6013,21 +5885,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-20_W7.62mm_Socket"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "904536b7-3bca-4182-a02c-9dbe2f8bceaf")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS273"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6040,7 +5899,7 @@
 			)
 		)
 		(property "Description" "8-bit D Flip-Flop, reset"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6054,7 +5913,7 @@
 		)
 		(property ki_fp_filters "DIP?20* SO?20* SOIC?20*")
 		(path "/567b0fc0-c3a5-4a7b-9c2c-e10a6ae31ce8")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "MD02U-1.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -6519,6 +6378,7 @@
 			(pintype "power_in")
 			(uuid "cf8f5cf4-7d9e-4d01-8ec8-944271107b3d")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Package_DIP.3dshapes/DIP-20_W7.62mm_Socket.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -6559,19 +6419,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c346d8ba-6e29-4203-b2a1-b4280a8e6b03")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -6600,7 +6447,7 @@
 		)
 		(property ki_fp_filters "CP_*")
 		(path "/72114197-e062-4a65-bfc8-bf6b5598a63e")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "MD02U-1.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -7810,7 +7657,7 @@
 				(width 0.12)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "c4c7d164-677c-47c6-a3f1-bea5d34b8248")
 		)
@@ -7821,7 +7668,7 @@
 				(width 0.05)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "af224337-402c-4a19-9d26-25dec8ba326a")
 		)
@@ -7852,7 +7699,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "1ca756ea-b4c5-425c-b8a9-f32e14681696")
 		)
@@ -7887,6 +7734,7 @@
 			(pintype "passive")
 			(uuid "a4326614-82e0-4529-9179-b7e469a8cfb7")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_THT.3dshapes/CP_Radial_D5.0mm_P2.50mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -7928,19 +7776,6 @@
 				)
 			)
 		)
-		(property "Footprint" "!MD02U-1:THT Resistor"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d9c79fb2-4150-43a2-ae3b-8cdcd9e5765a")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -7969,7 +7804,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/4eb645a3-1423-4bf7-8648-37bec63808d3")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "MD02U-1.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -8079,10 +7914,11 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 56 "/CON1.Pin40")
+			(net 56 "/~{Read}.U6")
 			(pintype "passive")
 			(uuid "dac138ca-f223-4374-af8e-5c9240c7f802")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -8124,19 +7960,6 @@
 				)
 			)
 		)
-		(property "Footprint" "!MD02U-1:THT Resistor"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "360fea55-63ee-4d43-b50c-78807c4c5e92")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -8165,7 +7988,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/bc9cbe49-7dc8-499c-98b4-71194e6c9cd2")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "MD02U-1.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -8275,10 +8098,11 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 57 "/CON1.Pin38")
+			(net 57 "/~{Read}.U5")
 			(pintype "passive")
 			(uuid "ff80bf35-0017-4dc3-a795-88546ea6046f")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -8320,19 +8144,6 @@
 				)
 			)
 		)
-		(property "Footprint" "!MD02U-1:SNES Cartridge Slot"
-			(at 0.06 -6.24 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "963d3740-bdd2-40fc-a418-40c9b6037f5e")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0.06 -6.24 0)
 			(unlocked yes)
@@ -8360,7 +8171,7 @@
 			)
 		)
 		(path "/67197eb1-c7d7-4ae5-ab58-9c2f07b7a176")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "MD02U-1.kicad_sch")
 		(attr smd)
 		(fp_rect
@@ -8370,7 +8181,7 @@
 				(width 0.25)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "eaf09fde-5dcd-4998-ad37-c74644e9f9da")
 		)
@@ -8622,7 +8433,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 41 "/~{Read}")
+			(net 41 "/~{Read}.U8")
 			(pinfunction "/Read")
 			(pintype "input")
 			(uuid "27a3903c-0220-453e-9adf-3f60825d39bc")
@@ -8908,7 +8719,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 41 "/~{Read}")
+			(net 41 "/~{Read}.U8")
 			(pinfunction "/CART")
 			(pintype "input")
 			(uuid "84af9336-ae8a-4c51-bc75-1f96416a90cb")
@@ -9056,6 +8867,7 @@
 			(pintype "input+no_connect")
 			(uuid "4de1c1b6-b4a9-4cb1-9427-46f0321e1ba3")
 		)
+		(embedded_fonts no)
 		(model "C:/Users/RWeic/Desktop/My 3D Docs/SNES Cartridge Slot Model v1.step"
 			(offset
 				(xyz -48 -3.5 0.5)
@@ -9096,19 +8908,6 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "e95059f0-8e61-4ce3-9343-02be789c6460")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -9137,7 +8936,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/c02abec3-2a1e-4c4b-b03c-0499fd2d7114")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "MD02U-1.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -9351,7 +9150,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 51 "/CON1.Pin45")
+			(net 51 "/Batt.Detect")
 			(pinfunction "Pin_5")
 			(pintype "passive")
 			(uuid "5450a29c-7ec3-4fb8-93ab-220456c0becf")
@@ -9367,6 +9166,7 @@
 			(pintype "passive")
 			(uuid "454a48bd-3553-4fb0-ab9c-ab18d7fac009")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x06_P2.54mm_Vertical.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -9408,19 +9208,6 @@
 				)
 			)
 		)
-		(property "Footprint" "!MD02U-1:MD Cartridge Slot"
-			(at 0.08 -13.83 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "7794147d-f2ad-49b1-9c42-5a627ae92e53")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0.08 -13.83 0)
 			(unlocked yes)
@@ -9448,7 +9235,7 @@
 			)
 		)
 		(path "/2e868d66-2c6b-4026-bec6-3a988ff7a494")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "MD02U-1.kicad_sch")
 		(attr smd)
 		(fp_rect
@@ -9458,7 +9245,7 @@
 				(width 0.3)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.SilkS")
 			(uuid "650c3633-450b-45f6-9680-98e82dda07e0")
 		)
@@ -9985,7 +9772,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 41 "/~{Read}")
+			(net 41 "/~{Read}.U8")
 			(pinfunction "/CAS0")
 			(pintype "input")
 			(uuid "8b8e4531-c497-4bd5-9752-ba449994ab08")
@@ -9996,7 +9783,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 41 "/~{Read}")
+			(net 41 "/~{Read}.U8")
 			(pinfunction "/CE_0")
 			(pintype "input")
 			(uuid "3fe77694-7301-4033-8735-9a0bfbaf7153")
@@ -10166,6 +9953,7 @@
 			(pintype "input")
 			(uuid "4f8d0f4a-1780-4a66-a092-8a4ec2fffc66")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "!MD02U-1:MGD2 Edge Connector"
 		(layer "F.Cu")
@@ -10188,19 +9976,6 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "39136692-2a76-4d06-9c4e-e49314695383")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "!MD02U-1:MGD2 Edge Connector"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "40bfef7a-30f9-4225-ab3d-25c4fb6f6b29")
 			(effects
 				(font
 					(size 1 1)
@@ -10236,7 +10011,7 @@
 		)
 		(property ki_fp_filters "Connector*:*_2x??_*")
 		(path "/12e68e4f-a59d-468f-b8f2-d10d1cfcbb88")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "MD02U-1.kicad_sch")
 		(attr smd)
 		(fp_text user "${REFERENCE}"
@@ -10615,7 +10390,7 @@
 			(at 7.62 0)
 			(size 0.9 9)
 			(layers "F.Cu" "F.Mask")
-			(net 41 "/~{Read}")
+			(net 41 "/~{Read}.U8")
 			(pinfunction "Pin_37")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
@@ -10625,7 +10400,7 @@
 			(at 7.62 0 180)
 			(size 0.9 9)
 			(layers "B.Cu" "B.Mask")
-			(net 57 "/CON1.Pin38")
+			(net 57 "/~{Read}.U5")
 			(pinfunction "Pin_38")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
@@ -10635,7 +10410,7 @@
 			(at 8.89 0)
 			(size 0.9 9)
 			(layers "F.Cu" "F.Mask")
-			(net 55 "/CON1.Pin39")
+			(net 55 "/~{Read}.U7")
 			(pinfunction "Pin_39")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
@@ -10645,7 +10420,7 @@
 			(at 8.89 0 180)
 			(size 0.9 9)
 			(layers "B.Cu" "B.Mask")
-			(net 56 "/CON1.Pin40")
+			(net 56 "/~{Read}.U6")
 			(pinfunction "Pin_40")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
@@ -10665,7 +10440,7 @@
 			(at 10.16 0 180)
 			(size 0.9 9)
 			(layers "B.Cu" "B.Mask")
-			(net 39 "/CON1.Pin42")
+			(net 39 "/~{Read}.U4")
 			(pinfunction "Pin_42")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
@@ -10695,7 +10470,7 @@
 			(at 12.7 0)
 			(size 0.9 9)
 			(layers "F.Cu" "F.Mask")
-			(net 51 "/CON1.Pin45")
+			(net 51 "/Batt.Detect")
 			(pinfunction "Pin_45")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
@@ -10751,6 +10526,7 @@
 			(thermal_bridge_angle 45)
 			(uuid "4ff5b25b-22df-4e33-babd-d94690580955")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "!MD02U-1:THT Resistor"
 		(layer "F.Cu")
@@ -10777,19 +10553,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "!MD02U-1:THT Resistor"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "cec47d09-3bf9-4e01-8e8e-17b9f443c8c3")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -10822,7 +10585,7 @@
 		)
 		(property ki_fp_filters "R_*")
 		(path "/55d63a61-8756-44c5-8bd6-79a36d41b86f")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "MD02U-1.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -10932,10 +10695,11 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 55 "/CON1.Pin39")
+			(net 55 "/~{Read}.U7")
 			(pintype "passive")
 			(uuid "eddb70bd-7c2e-4317-bb50-5b56d26c7c60")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -10953,7 +10717,7 @@
 		(uuid "f8747fe7-04af-44a9-b996-0160da423b62")
 		(at 269.86 119.86 -90)
 		(property "Reference" "J2"
-			(at 0 3 -90)
+			(at 0 3 270)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
@@ -10966,7 +10730,7 @@
 			)
 		)
 		(property "Value" "GB Cartridge Slot"
-			(at 0 5 -90)
+			(at 0 5 270)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "46918672-f4a1-407b-89dd-36547598bed9")
@@ -10977,21 +10741,8 @@
 				)
 			)
 		)
-		(property "Footprint" "!MD02U-1:GB Cartridge Slot"
-			(at -0.07 -6.22 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "43d7ab80-6afb-4510-a542-4f74cf669236")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at -0.07 -6.22 -90)
+			(at -0.07 -6.22 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -11004,7 +10755,7 @@
 			)
 		)
 		(property "Description" ""
-			(at -0.07 -6.22 -90)
+			(at -0.07 -6.22 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -11017,7 +10768,7 @@
 			)
 		)
 		(path "/ff96658d-60b5-44e6-b6b5-4b917a282e68")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "MD02U-1.kicad_sch")
 		(attr smd)
 		(fp_circle
@@ -11027,7 +10778,7 @@
 				(width 0.05)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "Edge.Cuts")
 			(uuid "f829f1b1-fa93-4c59-bc36-796701db1260")
 		)
@@ -11038,7 +10789,7 @@
 				(width 0.05)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "Edge.Cuts")
 			(uuid "17c276a2-9a9b-48c0-8a12-74c56685ac41")
 		)
@@ -11049,7 +10800,7 @@
 				(width 0.05)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "Edge.Cuts")
 			(uuid "a36ca38f-6aab-4a4a-badc-b3aa752cb8b6")
 		)
@@ -11060,12 +10811,12 @@
 				(width 0.05)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "Edge.Cuts")
 			(uuid "617022bd-1280-445f-b59d-160f612f9b28")
 		)
 		(fp_text user "${REFERENCE}"
-			(at -0.07 -3.72 -90)
+			(at -0.07 -3.72 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "d75bec16-b9f9-42ae-9e66-d5cdd9a83156")
@@ -11428,6 +11179,7 @@
 			(pintype "bidirectional")
 			(uuid "ec060c2b-e54b-4afc-8cc1-10ff72d950e5")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
 		(layer "F.Cu")
@@ -11453,19 +11205,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "31b06c91-0cf5-418b-9d6b-3b285a73ec95")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -11498,7 +11237,7 @@
 		)
 		(property ki_fp_filters "C_*")
 		(path "/3ce07093-1317-43fa-abd6-e9865bff7786")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "MD02U-1.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -11672,6 +11411,7 @@
 			(pintype "passive")
 			(uuid "142e8966-5cf0-4ee8-bfe6-390590f253a4")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D5.0mm_W2.5mm_P5.00mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -11846,7 +11586,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "77c1702f-3072-494c-a1d6-ea3f447411ed")
 	)
@@ -11888,7 +11628,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "818a0c9c-5ed2-4933-b583-c21bd23e03c8")
 	)
@@ -11910,7 +11650,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "87638bf5-872f-47ed-92eb-015a29088874")
 	)
@@ -11921,7 +11661,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "8cd3a0bb-c138-46a4-bec5-200132440ce5")
 	)
@@ -11942,7 +11682,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "9c43b911-9a53-4298-93bf-063d293beddc")
 	)
@@ -11964,7 +11704,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "d36c4a7f-cfa2-4ff8-927e-62eb255f2f4f")
 	)
@@ -11985,7 +11725,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "ec6d1dee-3728-4963-bf1d-b65eefe2b44d")
 	)
@@ -26274,4 +26014,5 @@
 		(net 92)
 		(uuid "fff88760-5609-46cd-80c8-4661ede28a65")
 	)
+	(embedded_fonts no)
 )
